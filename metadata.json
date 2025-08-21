@@ -1,0 +1,7 @@
+{
+  "name": "Webcam Storyteller",
+  "description": "Uses your webcam to generate a funny, adult-themed story.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

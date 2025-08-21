@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webcam Storyteller</title>
+  <link rel="stylesheet" href="index.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/genai": "https://esm.sh/@google/genai@^0.8.0",
+        "marked": "https://esm.sh/marked@^15.0.8"
+      }
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <h1>Webcam Storyteller</h1>
+    <p>Let's find the secret story in your room.</p>
+    <div class="camera-container">
+      <video id="webcam" autoplay playsinline muted></video>
+      <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+    <button id="capture-btn">Tell Me A Story</button>
+    <div id="loader" class="hidden">
+      <div class="spinner"></div>
+      <p>Dreaming up a story...</p>
+    </div>
+    <div id="story-container"></div>
+  </main>
+  <script type="module" src="index.tsx"></script>
+</body>
+</html>
