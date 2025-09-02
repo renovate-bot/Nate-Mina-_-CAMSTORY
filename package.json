@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@google/genai": "^0.8.0",
-    "marked": "^15.0.8"
+    "marked": "^16.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
