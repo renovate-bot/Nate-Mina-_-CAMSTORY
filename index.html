@@ -19,9 +19,22 @@
     <p>Let's find the secret story in your room.</p>
     <div class="camera-container">
       <video id="webcam" autoplay playsinline muted></video>
-      <canvas id="canvas" style="display: none;"></canvas>
+      <canvas id="canvas"></canvas>
+      <div id="label-container"></div>
     </div>
-    <button id="capture-btn">Tell Me A Story</button>
+    <div class="button-container">
+      <button id="capture-btn">Capture Scene & Tell Story</button>
+      <input type="file" id="upload-input" class="hidden" accept="image/*">
+      <label for="upload-input" id="upload-label" class="button-like">Upload Image</label>
+    </div>
+    <div id="voice-selection-container" class="settings-container voice-selection-container hidden">
+        <label for="voice-select">Storyteller Voice:</label>
+        <select id="voice-select"></select>
+    </div>
+    <div class="settings-container" id="speed-control-container">
+        <label for="speed-control">Narration Speed:</label>
+        <input type="range" id="speed-control" min="0.5" max="1.5" step="0.1" value="0.9">
+    </div>
     <div id="loader" class="hidden">
       <div class="spinner"></div>
       <p>Dreaming up a story...</p>
